@@ -83,7 +83,6 @@
 - 3 Sum
 - Container with Most Water(Tapping water problem)
 
-
 ## String
 
 - Longest Substring Without Repeating Characters
@@ -97,26 +96,25 @@
 - Palindromic Substrings
 - Encode and Decode Strings (Leetcode Premium)
 
-
 ## Solved
-### pattern - preffix and suffix array
+
+# pattern - preffix and suffix array
 - Trapping rain water
 - product-of-array-except-self
   
-## Recursion
+# Recursion
 Fibonacci numbers
 reverse a string
 range of numbers (start,end)
 find subsets of an array of numbers
 
-## stack
+# stack
 
 implement stack
 reverse words in sentence
 input sting has valid parenthesis
 
-
-## queue
+# queue
 
 implement queue
 circular queue implementation(design circular queue)
@@ -124,25 +122,24 @@ implement stack using queue
 implement queue using stack
 sliding window maximum using queue (get larger number in each window)
 
-## sorting
+# sorting
 insertion, bubble and selection sort
 merge and quick sort
 
-## searching
+# searching
 linear and binary search
-
 
 # Algorithms
 
 ## Array algorithms
 prefix and suffix sum
 kadanes's algorithm
-Two pointers
-dutch national flag algo
-slifdding window algo
+Two pointers algorithm
+dutch national flag algorithm
+sliding window algorithm
 quick select algorithm
-modified binary search
-boyer moore majority vote algo
+modified binary search 
+boyer moore majority vote algorithm
 juggling algorithm (Rotating array)
 
 ## String algorithms
