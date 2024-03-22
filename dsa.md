@@ -111,18 +111,18 @@ find subsets of an array of numbers
 
 ## stack
 
-custom stack
+implement stack
 reverse words in sentence
 input sting has valid parenthesis
 
 
 ## queue
 
-custom queue
+implement queue
 circular queue implementation(design circular queue)
-implement stack using queue 
+implement stack using queue
 implement queue using stack
-sliding window maximum using queue (get higher number in each window)
+sliding window maximum using queue (get larger number in each window)
 
 ## sorting
 insertion, bubble and selection sort
@@ -130,3 +130,21 @@ merge and quick sort
 
 ## searching
 linear and binary search
+
+
+# Algorithms
+
+## Array algorithms
+prefix and suffix sum
+kadanes's algorithm
+Two pointers
+dutch national flag algo
+slifdding window algo
+quick select algorithm
+modified binary search
+boyer moore majority vote algo
+juggling algorithm (Rotating array)
+
+## String algorithms
+Rabin-Karp Algorithm for Pattern Searching
+The Knuth-Morris-Pratt (KMP)Algorithm
