@@ -18,6 +18,9 @@
 - [Implementation of queue](#implementation-of-queue)
 - [implement stack using queue](#implement-stack-using-queue)
 - [Sliding Window Maximum](#sliding-window-maximum)
+- [Selection sort](#selection-sort)
+- [Bubble sort](#bubble-sort)
+- [Insertion sort](#insertion-sort)
 
 
 # Reverse words in sentence.
@@ -567,4 +570,129 @@ var maxSlidingWindow = function(nums, k) {
     }
     return result;
 };
+```
+# Selection sort
+find minimum element in the array and put it where it belongs.
+
+Steps:
+ - find minimum in the range
+ - put it in the beginning of the range
+
+```javascript
+function selectionSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let minIndex = i;
+        for (let j = i; j < arr.length; j++) {
+            if (arr[j] < arr[minIndex]) { // find the minimum in range
+                minIndex = j;
+            }
+        }
+        // swap first element in the range with the minimun element found in the range
+        let temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
+    return arr;
+}
+
+console.log(selectionSort([4, 3, 2, 6, 4, 3, 5, 8, 10, 1]));
+```
+
+# Bubble sort
+Idea is to swap two adjacent elements so that the largest element get to the end of the array.
+
+Steps:
+  - compare two adjacent elements if next element is smaller then swap
+  - on each traversal, largest element gets to the end of the array. i.e one element is sorted in each iteration
+
+```javascript
+function bubbleSort(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {// loop through the array
+        for (let j = 0; j < arr.length; j++) { // loop again through the array
+            let k = j + 1;
+            if (arr[j] > arr[k]) { //compare current and next element if smaller then current element then swap
+                let temp = arr[k];
+                arr[k] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    return arr;
+}
+
+console.log(bubbleSort([4, 3, 5, 2, 7, 6, 10, 1]))
+```
+Let's optimise it a bit:
+ - since on every iteration last element is sorted we will not swap it again.
+ - we will swap one less element on each iteration
+
+```javascript
+function bubbleSort(arr) {
+    for (let i = arr.length - 1; i >= 0; i--) { // loop till number of elements - 1
+        for (let j = 0; j < i; j++) { // loop one less element each time
+            let k = j + 1;
+            if (arr[j] > arr[k]) { //compare current and next element if smaller then current element then swap
+                let temp = arr[k];
+                arr[k] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    return arr;
+}
+
+console.log(bubbleSort([4, 3, 5, 2, 7, 6, 10, 1]))
+```
+
+One more optimisation:
+
+```javascript
+function bubbleSort(arr) {
+    for (let i = arr.length - 1; i >= 0; i--) { // loop till number of elements - 1
+        let didSwap = false;
+        for (let j = 0; j < i; j++) { // loop one less element each time
+
+            let k = j + 1;
+            if (arr[j] > arr[k]) { //compare current and next element if smaller then current element then swap
+                let temp = arr[k];
+                arr[k] = arr[j];
+                arr[j] = temp;
+                didSwap = true; 
+            }
+        }
+        if (didSwap === false) { // if the array was already sorted we don't need to sort again
+            break;
+        }
+    }
+    return arr;
+}
+
+console.log(bubbleSort([4, 3, 5, 2, 7, 6, 10, 1]))
+// console.log(bubbleSort([1, 2, , 3, 4, 5, 6, 7]))
+```
+
+# Insertion sort
+  - While iteration through the array, think as if you are adding one element to the window
+  - And that element needs to be placed in its correct position
+
+Steps:
+  - Loop through the array, as if adding one element to the window
+  - compare that element to every element on the left till the condition is satisfied.
+  - if the element before the current element is larger then swap it with itself.
+
+```javascript
+function insertionSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let j = i;
+        while (j > 0 && arr[j] < arr[j - 1]) {
+            let temp = arr[j - 1];
+            arr[j - 1] = arr[j];
+            arr[j] = temp;
+            j--;
+        }
+    }
+    return arr;
+}
+
+console.log(insertionSort([12, 2, 10, 8, 4, 2, 7]))
 ```

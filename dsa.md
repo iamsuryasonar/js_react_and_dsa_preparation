@@ -122,12 +122,12 @@ implement stack using queue
 implement queue using stack
 sliding window maximum using queue (get larger number in each window)
 
+# searching
+linear and binary search
+
 # sorting
 insertion, bubble and selection sort
 merge and quick sort
-
-# searching
-linear and binary search
 
 # Algorithms
 
@@ -137,10 +137,10 @@ kadanes's algorithm
 Two pointers algorithm
 dutch national flag algorithm
 sliding window algorithm
-quick select algorithm
 modified binary search 
 boyer moore majority vote algorithm
 juggling algorithm (Rotating array)
+quick select algorithm
 
 ## String algorithms
 Rabin-Karp Algorithm for Pattern Searching
