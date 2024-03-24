@@ -62,7 +62,8 @@ function exist(board, word) {
     // Write your code here
 }
 
-11.  Majority Element
+11.  Majority Element(Boyer-Moore Majority Voting Algorithm)
+
 Boyer-Moore Majority Voting Algorithm Intuition
 
 in a given array if we count all occurence of majority element and subtract vount of all minority elements we get a positive value.
@@ -70,5 +71,17 @@ which means that if we increment if a perticular element is found one after anot
 
 later we check if the majority element that we got   is greater the n/2 or not. greater means it is the majority element for sure.
 
-12. Merge Sort
-13. Quick Sort
+1.  Merge Sort
+2.  Quick Sort
+14. Array rotation (Juggling algorithm)
+15. Calculate age
+16. Convert to camel case
+17. Fizzbuzz
+18. Longest word
+19. Missing number
+20. Find max value in object
+21. Difference between slice and splice
+22. Function to repeat string
+23. Mask card number
+24. Copy to clipboard
+25. Event Delegation
