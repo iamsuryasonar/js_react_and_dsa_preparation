@@ -96,12 +96,6 @@
 - Palindromic Substrings
 - Encode and Decode Strings (Leetcode Premium)
 
-## Solved
-
-# pattern - preffix and suffix array
-- Trapping rain water
-- product-of-array-except-self
-  
 # Recursion
 Fibonacci numbers
 reverse a string
@@ -145,3 +139,22 @@ quick select algorithm
 ## String algorithms
 Rabin-Karp Algorithm for Pattern Searching
 The Knuth-Morris-Pratt (KMP)Algorithm
+
+
+# Patterns - 
+
+## preffix and suffix array
+- Trapping rain water
+- product-of-array-except-self
+## two pointers
+## Devide and conquer
+## K-way merge
+## sliding window (fixed,dynamic sized window)
+## Binary search
+## BFS
+- use queue datastructure and parent then add children from left to right after removing parent from the queue.
+## DFS
+- in-orded
+- pre-order
+- post-order
+## Topology sort (directed graph)
