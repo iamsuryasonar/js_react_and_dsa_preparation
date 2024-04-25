@@ -53,7 +53,7 @@ console.log(getName.apply(person2));
 const bindedFn = getName.bind(person2)
 console.log(bindedFn())
 
-/* But there is another way of doing this, I meant the reusing of the getName function */
+/* But there is another way of doing this, I meant reusing the getName function */
 function Person(first_name, last_name) {
     this.first_name = first_name;
     this.last_name = last_name;
@@ -87,7 +87,7 @@ console.log(person3.hasOwnProperty('first_name'))
 console.log(person3 instanceof Person);
 
 const anotherPerson = {}
-// to assign one properties of object to another object, there could be multiple source that we can pass as arguments
+// to assign properties of one object to another object, there could be multiple source that we can pass as arguments
 Object.assign(anotherPerson, person3);
 console.log(anotherPerson)
 
