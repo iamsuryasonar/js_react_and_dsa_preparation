@@ -158,3 +158,31 @@ The Knuth-Morris-Pratt (KMP)Algorithm
 - pre-order
 - post-order
 ## Topology sort (directed graph)
+
+
+
+## Array patterns
+
+- Dynamic Array Manipulation: Includes basic array manipulations such as inserting, deleting, or updating elements. This category also includes challenges like rotating an array, finding a missing or duplicate number.
+- Subarray Problems:
+Maximum Subarray Problem: Finding a contiguous subarray with the maximum sum, often solved using Kadane’s Algorithm.
+Subarray with a given sum: Includes finding subarrays that sum up to a target value.
+- Sliding Window:
+Fixed-size: Problems like finding the maximum sum of a subarray of a given size.
+Variable-size: Problems like finding the longest substring without repeating characters or the smallest subarray with a sum greater than a given value.
+- Two Pointer Technique:
+Opposite direction: Used in problems like reversing an array, or for two-sum where elements in a sorted array sum up to a specific number.
+Same direction: Often used in problems like removing duplicates from a sorted array or compressing an array based on certain criteria.
+- Sorting and Searching:
+Binary Search: Utilized in problems like searching in a rotated sorted array or finding the first and last position of an element in a sorted array.
+Sorting: Problems that involve sorting arrays or using the properties of sorted arrays to simplify the problem, such as finding pairs with a specific sum.
+- Hashing and Count:
+Frequency count: Useful for problems like finding all duplicate numbers.
+HashMap: For problems like finding subarrays with zero sum or grouping by frequency.
+- Matrix Problems:
+Spiral Order Traversal
+Rotate Image: Rotating the matrix 90 degrees, flip operations.
+Set Matrix Zeroes: Modifying the matrix based on conditions detected in an initial pass.
+- Miscellaneous:
+Stock Buy and Sell Problems: Maximizing profit from buying and selling stocks.
+Interval Merging or Insertion: Merging overlapping intervals, inserting intervals into a list of non-overlapping intervals and merging if necessary.
