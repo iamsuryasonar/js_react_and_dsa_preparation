@@ -1,3 +1,9 @@
+/*  
+    Intuition is to add current element or not add the current element.
+    We keep on doing this until we reach the leaf node i.e. we went out of bound (the base case),
+    then we add the leaf node i.e the elements in temp array to the result array.
+*/
+
 function helper(temp, index, nums, result) {
     if (index === nums.length) return result.push([...temp]);
 
