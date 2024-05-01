@@ -5,6 +5,27 @@ class Node {
     }
 }
 
+// brute force solution
+// var hasCycle = function(head) {
+//     if(head === null || head.next === null){
+//         return false;
+//     }
+
+//     let set = new Set();
+//     let current  = head;
+    
+//     while(current!==null){
+//         if(set.has(current)){
+//             return true;
+//         }else{
+//             set.add(current);
+//             current = current.next;
+//         }
+//     }
+//     return false;
+// };
+
+// optimised solution
 var hasCycle = function (head) {
     let slow = head;
     let fast = head;
