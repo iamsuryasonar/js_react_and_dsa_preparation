@@ -166,7 +166,7 @@ Set Matrix Zeroes: Modifying the matrix based on conditions detected in an initi
 Stock Buy and Sell Problems: Maximizing profit from buying and selling stocks.
 Interval Merging or Insertion: Merging overlapping intervals, inserting intervals into a list of non-overlapping intervals and merging if necessary.
 
-### 9 most inmportant Patterns
+### 10 most inmportant Patterns
 
 1.  Two pointer
 2.  Sliding windows (fixed,dynamic sized window)
