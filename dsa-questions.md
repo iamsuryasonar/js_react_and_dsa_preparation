@@ -140,27 +140,6 @@ quick select algorithm
 Rabin-Karp Algorithm for Pattern Searching
 The Knuth-Morris-Pratt (KMP)Algorithm
 
-
-# Patterns - 
-
-## preffix and suffix array
-- Trapping rain water
-- product-of-array-except-self
-## two pointers
-## Devide and conquer
-## K-way merge
-## sliding window (fixed,dynamic sized window)
-## Binary search
-## BFS
-- use queue datastructure and parent then add children from left to right after removing parent from the queue.
-## DFS
-- in-orded
-- pre-order
-- post-order
-## Topology sort (directed graph)
-
-
-
 ## Array patterns
 
 - Dynamic Array Manipulation: Includes basic array manipulations such as inserting, deleting, or updating elements. This category also includes challenges like rotating an array, finding a missing or duplicate number.
@@ -187,9 +166,29 @@ Set Matrix Zeroes: Modifying the matrix based on conditions detected in an initi
 Stock Buy and Sell Problems: Maximizing profit from buying and selling stocks.
 Interval Merging or Insertion: Merging overlapping intervals, inserting intervals into a list of non-overlapping intervals and merging if necessary.
 
+### 7 most inmportant Patterns
 
+1. Two pointer
+2. Sliding windows (fixed,dynamic sized window)
+3. 0/1 Knapsack Pattern
+4. Fast and Slow pointers pattern
+5. Merge intervals
+6. In-place reversal of a linked list
+7. Tree Breadth-First Search (BFS) - use queue datastructure and parent then add children from left to right after removing parent from the queue.
+8. Tree Deapth-First Search (DFS) - in-orded, pre-order, post-order.
+
+# Some more patterns - 
+
+preffix and suffix array
+- Trapping rain water
+- product-of-array-except-self
+Devide and conquer
+K-way merge
+Binary search
+Topology sort (directed graph)
 
 ### Patterns recognition 
+
 If input array is sorted then
 - Binary search
 - Two pointers
