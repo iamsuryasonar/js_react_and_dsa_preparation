@@ -125,17 +125,17 @@ merge and quick sort
 
 # Algorithms
 
-## Array algorithms
-prefix and suffix sum
-kadanes's algorithm
-Two pointers algorithm
-dutch national flag algorithm
-sliding window algorithm
-modified binary search 
-boyer moore majority vote algorithm
-juggling algorithm (Rotating array)
-quick select algorithm
-
+## Array algorithms 
+prefix and suffix sum  
+kadanes's algorithm  
+Two pointers algorithm  
+dutch national flag algorithm  
+sliding window algorithm  
+modified binary search   
+boyer moore majority vote algorithm  
+juggling algorithm (Rotating array)   
+quick select algorithm  
+ 
 ## String algorithms
 Rabin-Karp Algorithm for Pattern Searching
 The Knuth-Morris-Pratt (KMP)Algorithm
