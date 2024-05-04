@@ -174,19 +174,19 @@ Interval Merging or Insertion: Merging overlapping intervals, inserting interval
 4.  Fast and Slow pointers pattern
 5.  Merge intervals
 6.  In-place reversal of a linked list
-7.  Tree Breadth-First Search (BFS) - use queue datastructure and parent then add children from left to right after removing parent from the queue.
+7.  Tree Breadth-First Search (BFS) - use queue datastructure, add parent then add childrens of it - from left to right after removing parent from the queue.
 8.  Tree Deapth-First Search (DFS) - in-orded, pre-order, post-order.
 9.  Subsets - dealing with Permutations and Combinations of a given set of elements.
 10. Binary search and Modified binary search
 
 # Some more patterns - 
 
-preffix and suffix array
+- preffix and suffix array
 - Trapping rain water
 - product-of-array-except-self
-Devide and conquer
-K-way merge
-Topology sort (directed graph)
+- Devide and conquer
+- K-way merge
+- Topology sort (directed graph)
 
 ### Patterns recognition 
 
