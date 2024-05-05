@@ -57,72 +57,6 @@
 - Sum of Beauty of all substrings
 - Reverse Every Word in A String
 
-# Sliding window and two pointers
-
-- Longest Substring Without Repeating Characters
-- Max Consecutive Ones III
-- Fruit Into Baskets
-- Longest Repeating Character Replacement
-- Binary Subarray with Sum
-- Count Number of Nice Subarrays
-- Number of Substrings Containing All Three Characters
-- Maximum Points You Can Obtain from Cards
-
-# Blink 75
-
-## Array
-
-- 2Sum Problem
-- Best Time to Buy and Sell Stock (DP-35)
-- Contains Duplicate
-- Product of Array Except Self
-- Kadane's Algorithm, maximum subarray sum
-- Maximum Product Subarray
-- Find minimum in Rotated Sorted Array
-- Search in Rotated Sorted Array I
-- 3 Sum
-- Container with Most Water(Tapping water problem)
-
-## String
-
-- Longest Substring Without Repeating Characters
-- Longest Repeating Character Replacement
-- Minimum Window Substring
-- Check for Anagrams
-- Group Anagrams
-- Check for balanced parentheses
-- Check Palindrome
-- Longest Palindromic Substring (without DP)
-- Palindromic Substrings
-- Encode and Decode Strings (Leetcode Premium)
-
-# Recursion
-Fibonacci numbers
-reverse a string
-range of numbers (start,end)
-find subsets of an array of numbers
-
-# stack
-
-implement stack
-reverse words in sentence
-input sting has valid parenthesis
-
-# queue
-
-implement queue
-circular queue implementation(design circular queue)
-implement stack using queue
-implement queue using stack
-sliding window maximum using queue (get larger number in each window)
-
-# searching
-linear and binary search
-
-# sorting
-insertion, bubble and selection sort
-merge and quick sort
-
 # Algorithms
 
 ## Array algorithms 
@@ -141,7 +75,6 @@ Rabin-Karp Algorithm for Pattern Searching
 The Knuth-Morris-Pratt (KMP)Algorithm
 
 ## Array patterns
-
 - Dynamic Array Manipulation: Includes basic array manipulations such as inserting, deleting, or updating elements. This category also includes challenges like rotating an array, finding a missing or duplicate number.
 - Subarray Problems:
 Maximum Subarray Problem: Finding a contiguous subarray with the maximum sum, often solved using Kadane’s Algorithm.
@@ -166,7 +99,92 @@ Set Matrix Zeroes: Modifying the matrix based on conditions detected in an initi
 Stock Buy and Sell Problems: Maximizing profit from buying and selling stocks.
 Interval Merging or Insertion: Merging overlapping intervals, inserting intervals into a list of non-overlapping intervals and merging if necessary.
 
-### 10 most inmportant Patterns
+# Sliding window and two pointers
+- Longest Substring Without Repeating Characters
+- Max Consecutive Ones III
+- Fruit Into Baskets
+- Longest Repeating Character Replacement
+- Binary Subarray with Sum
+- Count Number of Nice Subarrays
+- Number of Substrings Containing All Three Characters
+- Maximum Points You Can Obtain from Cards
+
+# Recursion
+- Fibonacci numbers
+- reverse a string
+- range of numbers (start,end)
+- find subsets of an array of numbers
+
+# stack
+- implement stack
+- reverse words in sentence
+- input sting has valid parenthesis
+
+# queue
+- implement queue
+- circular queue implementation(design circular queue)
+- implement stack using queue
+- implement queue using stack
+- sliding window maximum using queue (get larger number in each window)
+
+# searching
+- linear and binary search
+
+# sorting
+- insertion, bubble and selection sort
+- merge and quick sort
+
+
+## Pattern-
+**Sliding Window**
+Used for- 
+- Finding subarrays
+- Finding sublists
+- FInding substrings
+Questions
+- Max sum subarrays
+- Longest substring without repeating characters
+- Min size subarray with given sum
+
+**Two pointers**
+Pointers moving towards each other - Good for sorted arrays ot finding a pair of elements with specific sum
+Pointers moving is same direction - Useful when we need to track a range that satisfies condition
+Fast and slow pointers - Cycle detection or finding middle of a linked list
+Used for- 
+- Pair search
+- Subarray search
+- Sequence search
+
+**DFS**
+Recursion of stack involved
+Used for- 
+- Graph traversal
+- Finding connected components
+- Depth related properties
+
+**Dynamic programming**
+Used for- 
+- Longest common subsequence
+- Shortest path
+- Maximisation or minimisation
+Questions
+- Climbing stairs
+- House Robber
+- Coin Change
+
+## binary tree problems(use dfs,bfs and recursively)-
+- tree includes a value
+- treeSum
+- tree min value
+- max root to leaf sum
+
+## dynamic programming problems-
+- fibonacci
+- minimum coins
+- coins how many coins
+- maze problem
+
+### 10 most important Patterns
 
 1.  Two pointer
 2.  Sliding windows (fixed,dynamic sized window)
