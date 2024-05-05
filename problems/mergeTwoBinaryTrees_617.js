@@ -17,7 +17,7 @@
 //  Calculate sum of both node values and assign it to each node of the new tree;
 //  Do untill all subtrees are merged and return new tree;
 
-var mergeTrees = function(root1, root2, tree = null) {
+var mergeTrees = function(root1, root2) {
     //  Base case to check if reached the leaf node that is null or tree has 0 node
     if(!root1&&!root2) return null;
 
@@ -26,14 +26,29 @@ var mergeTrees = function(root1, root2, tree = null) {
     let val2 = root2?root2.val:0;
 
     // create a node with sum of both values of the trees.
-    tree = new TreeNode(val1+val2)
+    let tree = new TreeNode(val1+val2)
 
     // merge left side of the tree 
-    tree.left = mergeTrees(root1?.left?root1.left:null,root2?.left?root2.left:null,tree);
+    tree.left = mergeTrees(root1?.left?root1.left:null,root2?.left?root2.left:null);
   
     // merge right side of the tree 
-    tree.right = mergeTrees(root1?.right?root1.right:null,root2?.right?root2.right:null,tree);
+    tree.right = mergeTrees(root1?.right?root1.right:null,root2?.right?root2.right:null);
   
     // return merged tree
     return tree;
 };
+
+// Another implementation- Simplest solution
+// var mergeTrees = function(root1, root2) {
+//     if(!root1&&!root2) return null;
+
+//     if(!root1) return root2; 
+//     if(!root2) return root1;
+
+//     let tree = new TreeNode(root1.val+root2.val);
+
+//     tree.left = mergeTrees(root1.left,root2.left);
+//     tree.right = mergeTrees(root1.right,root2.right);
+
+//     return tree;
+// };
