@@ -13,18 +13,27 @@
  */
 
 var searchBST = function(root, val) {
-    let res = null;
-    function helper(root,val){
-        if(!root) return null;
+    // let res = null;
+    // function helper(root,val){
+    //     if(!root) return null;
 
-        if(root.val === val){
-            res = root;
-            return;
-        }
+    //     if(root.val === val){
+    //         res = root;
+    //         return;
+    //     }
 
-        helper(root.left,val)
-        helper(root.right,val)
+    //     helper(root.left,val)
+    //     helper(root.right,val)
+    // }
+    // helper(root,val);
+    // return res;
+
+    if(!root) return null;
+    
+    if(root.val === val) {
+        return root;
     }
-    helper(root,val);
-    return res;
+
+    if(root.val>val) return searchBST(root.left,val)
+    if(root.val<val) return searchBST(root.right,val)
 };
