@@ -255,96 +255,96 @@ Else
 # Questions by pattern
 
 ## Two pointers
-Two Sum II - Input Array Is Sorted
-Remove Duplicates from Sorted Array
-Container With Most Water
-Move Zeroes
-Longest Substring Without Repeating Characters
-Valid Palindrome
-3Sum
-Find the Duplicate Number
-Sort Colors
+Two Sum II - Input Array Is Sorted  
+Remove Duplicates from Sorted Array  
+Container With Most Water  
+Move Zeroes  
+Longest Substring Without Repeating Characters  
+Valid Palindrome  
+3Sum  
+Find the Duplicate Number  
+Sort Colors  
 
 ## Sliding window
-Longest Substring Without Repeating Characters
-Minimum Size Subarray Sum
-Longest Repeating Character Replacement
-Permutation in String
-Maximum Number of Vowels in a Substring of Given Length
-Find All Anagrams in a String
-Longest Subarray with Ones After Replacement
-Subarrays with K Different Integers
-Sliding Window Maximum
-Longest Substring with At Most K Distinct Characters
+Longest Substring Without Repeating Characters  
+Minimum Size Subarray Sum  
+Longest Repeating Character Replacement  
+Permutation in String  
+Maximum Number of Vowels in a Substring of Given Length  
+Find All Anagrams in a String  
+Longest Subarray with Ones After Replacement  
+Subarrays with K Different Integers  
+Sliding Window Maximum  
+Longest Substring with At Most K Distinct Characters  
 
 ## Intervals
-Merge Intervals
-Insert Interval
-Non-overlapping Intervals
-Employee Free Time
-Meeting Rooms II
-Add Bold Tag in String
-Find Right Interval
+Merge Intervals  
+Insert Interval  
+Non-overlapping Intervals  
+Employee Free Time  
+Meeting Rooms II  
+Add Bold Tag in String  
+Find Right Interval  
 
 ## Binary Search
-Binary Search
-Search Insert Position
-Find Minimum in Rotated Sorted Array
-Search in Rotated Sorted Array
-Find Peak Element
+Binary Search  
+Search Insert Position  
+Find Minimum in Rotated Sorted Array  
+Search in Rotated Sorted Array  
+Find Peak Element  
 
 ## Modified binary search
-First Bad Version
-Find K Closest Elements
-Search a 2D Matrix
-Single Element in a Sorted Array
-Find Minimum in Rotated Sorted Array II
+First Bad Version  
+Find K Closest Elements  
+Search a 2D Matrix  
+Single Element in a Sorted Array  
+Find Minimum in Rotated Sorted Array II  
 
 ## Fast and slow pointer 
-Linked List Cycle
-Middle of the Linked List
-Intersection of Two Linked Lists
-Remove Nth Node From End of List
+Linked List Cycle  
+Middle of the Linked List  
+Intersection of Two Linked Lists  
+Remove Nth Node From End of List  
 
-## Quick select
-Kth Largest Element in an Array
-Median of Two Sorted 
-K Closest Points to Origin
-Kth Smallest Element in a Sorted Matrix
-Find the Duplicate Number
+## Quick select  
+Kth Largest Element in an Array  
+Median of Two Sorted    
+K Closest Points to Origin  
+Kth Smallest Element in a Sorted Matrix  
+Find the Duplicate Number  
 
 ## Subsets
-Subsets
-Subsets II (Contains Duplicates)
-Combinations
-Combination Sum
-Permutations
-Permutations 2
-Subsets With Sum K
-Subsets with Unique Sums
-Letter Case Permutation
-Generate Parentheses
-Subsets with Different Summands
+Subsets  
+Subsets II (Contains Duplicates)  
+Combinations  
+Combination Sum  
+Permutations  
+Permutations 2  
+Subsets With Sum K  
+Subsets with Unique Sums  
+Letter Case Permutation  
+Generate Parentheses  
+Subsets with Different Summands  
 
 ## BFS
-Binary Tree Level Order Traversal
-Word Ladder
-Clone Graph
-Shortest Path in Binary Matrix
-Number of Islands
+Binary Tree Level Order Traversal  
+Word Ladder  
+Clone Graph  
+Shortest Path in Binary Matrix  
+Number of Islands  
 
 ## DFS 
-Binary Tree Inorder Traversal
-Combination Sum
-Word Search
-Letter Combinations of a Phone Number
-Permutations
+Binary Tree Inorder Traversal  
+Combination Sum  
+Word Search  
+Letter Combinations of a Phone Number  
+Permutations  
 
-## Dynamic programming
-Fibonacci Sequence
-Climbing Stairs
-House Robber
-Coin Change
+## Dynamic programming 
+Fibonacci Sequence  
+Climbing Stairs  
+House Robber  
+Coin Change  
 
 
 
