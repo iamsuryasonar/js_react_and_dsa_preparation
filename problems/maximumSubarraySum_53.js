@@ -22,26 +22,39 @@
 // };
 
 // Optimised approach using kadane's algorithm
+
+// Intuition is to keep adding each element to sum and checking if current sum is greater than maxSum so far
+// as well as checking if sum is negative or 0 because it will not add any value to the sum.
+// then reinitialising sum to 0.
+
+// var maxSubArray = function(nums) {
+//     let sum = 0;
+//     let maxSum = -Infinity;
+//     let i = 0;
+
+//     while(i<nums.length){
+//         sum += nums[i];
+
+//         maxSum = Math.max(sum,maxSum);
+
+//         if(sum<=0){
+//             sum = 0;
+//         }
+//         i++;
+//     }
+//     return maxSum;
+// };
+
+
+// Another approach
 var maxSubArray = function(nums) {
-    let maxSum = -Infinity;
-    let sum = 0;
-    let i = 0;
-    let j = i;
-
-    while(j<nums.length){
-        sum += nums[j];
-
-        if(sum>maxSum){ 
-            maxSum = sum;
-        }
-
-        if(sum <= 0){ // since sum has become zero/negative it will not add any value to sum
-            sum = 0;
-            i=j;
-        }
-
-        j++
+    let maxSum = nums[0];
+    let currSum = nums[0];
+    
+    for(let i = 1;i<nums.length;i++){
+        currSum = Math.max(currSum+nums[i],nums[i]);
+        maxSum = Math.max(maxSum,currSum);
     }
-
     return maxSum;
 };
+
