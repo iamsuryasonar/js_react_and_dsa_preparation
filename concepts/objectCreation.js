@@ -53,7 +53,7 @@ console.log(getName.apply(person2));
 const bindedFn = getName.bind(person2)
 console.log(bindedFn())
 
-/* But there is another way of doing this, I meant reusing the getName function */
+/* But there is another way of reusing the getName function */
 function Person(first_name, last_name) {
     this.first_name = first_name;
     this.last_name = last_name;

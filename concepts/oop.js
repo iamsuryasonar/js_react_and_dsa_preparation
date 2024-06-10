@@ -29,7 +29,7 @@ User.prototype.printName = function () { // this will add printName function to 
 const user2 = new User('John');
 user2.printName(); // Output: John
 
-console.log(user2.__proto__);// to check the prototype. (not a prefered way)
+console.log(user2.__proto__); // to check the prototype. (not a prefered way)
 const proto = Object.getPrototypeOf(user2); // prefered way of checking prototype
 console.log(proto);
 

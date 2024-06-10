@@ -23,3 +23,30 @@ Promise.all([promise1, promise2, promise3]).then(values => {
     // catches whichever promise is rejected first.
     console.log(err)
 })
+
+
+/* polyfil for Promise.all */
+
+/* 
+function promiseAll(promises) {
+    return new Promise((resolve, reject) => {
+        let result = [];
+        for (let promise of promises) {
+            promise.then((data) => {
+                result.push(data);
+                if (result.length === promises.length) {
+                    resolve(result);
+                }
+            }).catch((err) => {
+                reject(err);
+            })
+        }
+    })
+}
+
+promiseAll([promise1, promise2, promise3]).then((data) => {
+    console.log(data)
+}).catch((err) => {
+    console.log(err)
+}) 
+*/

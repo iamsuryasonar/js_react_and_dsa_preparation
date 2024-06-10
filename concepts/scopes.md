@@ -13,4 +13,5 @@ const cannot be reassigned
 
 var could be redeclared but let and const can't be re declared
 
+
 const should assing with a value on initialization but not for let and const
