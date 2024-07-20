@@ -11,7 +11,8 @@ var canJump = function(nums) {
 
     let maxPossibleJumpIndex = 0;
     for(let i = 0;i<nums.length;i++){
-        if(maxPossibleJumpIndex === i && nums[i] === 0 && i<nums.length-1) return false;
+        // if(maxPossibleJumpIndex === i && nums[i] === 0 && i<nums.length-1) return false;
+        if(i > maxPossibleJumpIndex) return false;
 
         let j = 1;
         while(j<=nums[i] && (j+i)<nums.length){
