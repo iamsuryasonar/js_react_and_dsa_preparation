@@ -1,3 +1,51 @@
+// Recursion. Time -> O(2^N) space -> O(N)
+// var climbStairs = function(n) {
+//     if(n===0) return 1;
+//     if(n<0) return 0;
+
+//     return climbStairs(n-1) + climbStairs(n-2);
+// }
+
+
+// Recursion + memoisation = dp. Time -> O(N) space -> O(2N)
+// var climbStairs = function(n,dp={}) {
+//     if(n===0) return 1;
+//     if(n<0) return 0;
+
+//     if(dp[n]) return dp[n];
+
+//     return dp[n] = climbStairs(n-1,dp)+climbStairs(n-2,dp);
+// }
+
+// Tabulation dp. Time -> O(N) space -> O(N)
+// var climbStairs = function(n) {
+//     let dp=new Array(n).fill(-1);
+
+//     dp[0] = 1;
+//     dp[1] = 2;
+
+//     for(let i = 2; i<=n; i++){
+//         dp[i] = dp[i-1]+dp[i-2];
+//     }
+
+//     return dp[n-1];
+// }
+
+// Tabulation dp. Time -> O(N) space -> O(1)
+var climbStairs = function(n) {
+
+    let prev1 = 1;
+    let prev2 = 2;
+
+    for(let i = 2; i<=n; i++){
+        let curi = prev1+prev2;
+        prev1 = prev2;
+        prev2 = curi;
+    }
+
+    return prev1;
+}
+
 
 // Intuition
 // For any 'n', you can reach 'n' either from 'n-1' or 'n-2'.
@@ -18,15 +66,3 @@
 // Total number of ways to reach 6 = Number of ways to reach 5 + Number of ways to reach 4
 // = 5 + 8
 // = 13 ways to reach 6
-
-// Optimised using dp on recursion problem
-
-var climbStairs = function(n,dp={}) {
-    if(n===0) return 0;
-    if(n===1) return 1;
-    if(n===2) return 2;
-
-    if(dp[n]) return dp[n];
-
-    return dp[n] = climbStairs(n-1,dp) + climbStairs(n-2,dp);
-};
