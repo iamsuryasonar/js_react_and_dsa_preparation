@@ -9,19 +9,19 @@ export default function MultipleFilters() {
     let filters = ['Bags', 'Watches', 'Sports', 'Sunglasses'];
 
     function onFilterClickHandler(el) {
-        setCurrentFilters((prev) => {
-            return [...prev, el];
-        });
-    }
-
-    function onRemoveFilterHandler(el) {
-        setCurrentFilters((prev) => {
-            return [...prev].filter((item) => {
-                if (item !== el) {
-                    return item;
-                }
+        if (currentFilters.includes(el)) {
+            setCurrentFilters((prev) => {
+                return [...prev].filter((item) => {
+                    if (item !== el) {
+                        return item;
+                    }
+                });
             });
-        });
+        } else {
+            setCurrentFilters((prev) => {
+                return [...prev, el];
+            });
+        }
     }
 
     return (
@@ -32,13 +32,7 @@ export default function MultipleFilters() {
                     <button
                         className={`button ${currentFilters.includes(el) ? 'active' : ''}`}
                         key={`filters-${idx}`}
-                        onClick={(e) => {
-                            if (currentFilters.includes(el)) {
-                                onRemoveFilterHandler(el);
-                            } else {
-                                onFilterClickHandler(el);
-                            }
-                        }}
+                        onClick={(e) => onFilterClickHandler(el)}
                     >
                         {el}
                     </button>
