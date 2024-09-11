@@ -18,13 +18,31 @@
 
 // solution 2
 
-function curry(fn){
-  return function helper(...args){
-    if(args.length >= fn.length){ // fn.length gives expected parameter length of fn function
-      return fn(...args);
+// function curry(fn){
+//   return function helper(...args){
+//     if(args.length >= fn.length){ // fn.length gives expected parameter length of fn function
+//       return fn(...args);
+//     }else{
+//       return (...newArgs)=> helper(...args,...newArgs);
+//     }
+//   }
+// }
+
+// solution 3 - preserving this context
+function curry(fn) {
+ 
+  return function curried(...args){
+    
+    if(args.length >= fn.length) {
+
+      return fn.call(this,...args);
+
     }else{
-      return (...newArgs)=> helper(...args,...newArgs);
+      return function(...newArgs){
+          return curried.apply(this,[...args,...newArgs]);
+      }
     }
+    
   }
 }
 
