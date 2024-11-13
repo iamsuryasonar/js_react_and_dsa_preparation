@@ -25,6 +25,9 @@ You can create a simple general Map polyfill. Or since you are asked to support 
 What is the Time / Space cost of your solution?
 
 
+
+**Solution**
+
 ```javascript
 class NodeStore {
    /**
