@@ -9,7 +9,8 @@ var maxProfit = function (prices) {
      }
     }
     return max;
-
+    */
+    /* 
     using space
     let max = Number.MIN_VALUE;
     let suffix = Array(prices.length).fill(0);
@@ -26,7 +27,8 @@ var maxProfit = function (prices) {
         max = Math.max(max,suffix[i]-prices[i])
     }
 
-    return max; */
+    return max; 
+    */
 
     // optimised (time complexity - O(n))
     let max = Number.MIN_VALUE;
