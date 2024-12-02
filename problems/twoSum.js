@@ -10,6 +10,19 @@ var twoSum = function (nums, target) {
         }
     */
     /*
+        let map = new Map();
+        for(let i=0;i<nums.length;i++){
+            let value = map.get(target - nums[i]);
+            if(value!==undefined){
+                return [value,i];
+            }else{
+                map.set(nums[i],i);
+            }
+        }
+    
+        return [];
+    */
+    /*
         nums.sort((a, b) => a - b);
     
         let i = 0;
@@ -24,15 +37,17 @@ var twoSum = function (nums, target) {
         }
         return []; 
     */
-
-
-    for (const element of nums) {
-        var difference = target - element;
-        if (arr.includes(difference) && difference !== element) {
-            return [element, difference];
+    
+    /*
+        for(let i=0;i<nums.length;i++){
+        let index = nums.indexOf(target-nums[i])
+        if( index!==-1 && index!==i ){
+                return [index,i]
+            }
         }
-    }
-    return [];
+    
+        return [];
+    */
 };
 
 console.log(twoSum([2, 7, 11, 15], 9))
