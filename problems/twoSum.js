@@ -8,7 +8,8 @@ var twoSum = function (nums, target) {
             }
             map.set(target - nums[index], index);
         }
-    
+    */
+    /*
         nums.sort((a, b) => a - b);
     
         let i = 0;
