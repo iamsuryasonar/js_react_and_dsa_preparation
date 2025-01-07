@@ -1,0 +1,32 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  --bg-color: white;
+  --text-color: black;
+  --button-bg-color: green;
+  --button-text-color: white;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+[data-theme='dark'] {
+  --bg-color: black;
+  --text-color: white;
+}
+
+.container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.button {
+  padding: 4px 14px;
+  border: 0px;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
