@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.App {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.circle {
+  margin: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
