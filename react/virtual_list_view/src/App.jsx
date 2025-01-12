@@ -1,5 +1,6 @@
 import './App.css';
 import ListView from './components/ListView';
+// import ListViewWithPagination from './components/ListViewWithPagination';
 
 function App() {
   const data = Array(100).fill(0).map((_, index) => {
@@ -20,6 +21,8 @@ function App() {
     }}>
     <ListView items={data} itemHeight={45} containerHeight={600} />
   </div>
+
+  // return <ListViewWithPagination/>
 }
 
 export default App;
