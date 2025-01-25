@@ -36,7 +36,7 @@ window.onload = () => {
         dragging = true;
 
         initialPosition.left = `${e.clientX - (dragable.clientWidth / 2)}px`;
-        initialPosition.top = `${e.clientY - (dragable.clientWidth / 2)}px`
+        initialPosition.top = `${e.clientY - (dragable.clientHeight / 2)}px`
     }
 
     function isDragableItemInsideContainer() {
