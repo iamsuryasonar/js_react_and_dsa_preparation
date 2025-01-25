@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-item {
+    background-color: rgb(154, 255, 255);
+    height: 100%;
+    width: 100%;
+    border: solid 2px black;
+}
+
+.grid-container {
+
+    display: grid;
+    /* grid-template-columns: 200px 100px; horizontally 2 childrens 200px and 100px respectively*/
+    /* grid-template-columns: 2fr 1fr; horizontally 2 childrens 2 fractions and 1 fraction respectively*/
+    /* grid-template-columns: repeat(3, 100px); horizontally repeat 3 childrens of 100px each*/
+    /* grid-template-rows: 200px 100px; vertically 2 childrens 200px and 100px respectively*/
+    /* grid-auto-rows: 150px; vertically auto childrens if 140px is available */
+    /* grid-auto-rows: minmax(140px, auto); vertically auto childrens if minimum 140px is available and maximum can be content size*/
+    /* grid-gap: 20px; gap between each grid*/
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); achieve responsiveness without media query */
+
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-auto-columns: auto 1fr auto;
+}
+
+.grid-item-1 {
+    /* grid-column-start: 1;
+        grid-column-end: 2; */
+    /* where to start grid from and where to end */
+    /* grid-column: 1/3; */
+    /* same as using grid-column-start or end */
+    /* grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column: 1/4; */
+    /* grid-area: 1/2/1/2; */
+
+    grid-area: header;
+    height: 100px;
+}
+
+.grid-item-2 {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-3 {
+    grid-area: sidebar;
+    width: 100px;
+    height: 100%;
+}
+
+.grid-item-4 {
+    grid-area: footer;
+    height: 100px;
+}
