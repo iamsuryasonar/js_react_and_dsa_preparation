@@ -1,9 +1,7 @@
 var reverseList = function(head) {
     if(!head?.next) return head;
-
-    let preservedHead = head.next;
-
-    let newHead = reverseList(preservedHead);
+    
+    let newHead = reverseList(head.next);
 
     head.next.next = head;
     head.next = null;
