@@ -22,11 +22,11 @@
 - maze problem
 
 
-[pareto problem set.pdf](https://github.com/iamsuryasonar/js_react_and_dsa_preparation/blob/main/problem_set.pdf)
+[pareto problem set.pdf](https://github.com/iamsuryasonar/js_react_and_dsa_preparation/blob/main/dsa/leetcode/resources/problem_set.pdf)
 
-[top 20 coding patterns.pdf](https://github.com/iamsuryasonar/js_react_and_dsa_preparation/blob/main/top_20_coding_patterns.pdf)
+[top 20 coding patterns.pdf](https://github.com/iamsuryasonar/js_react_and_dsa_preparation/blob/main/dsa/leetcode/resources/top_20_coding_patterns.pdf)
 
-[coding patterns design guru.pdf](https://github.com/iamsuryasonar/js_react_and_dsa_preparation/blob/main/coding_patterns_design_guru.pdf)
+[coding patterns design guru.pdf](https://github.com/iamsuryasonar/js_react_and_dsa_preparation/blob/main/dsa/leetcode/resources/coding_patterns_design_guru.pdf)
 
 # Websites 
 
