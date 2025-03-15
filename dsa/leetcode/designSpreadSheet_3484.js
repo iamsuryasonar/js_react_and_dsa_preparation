@@ -99,3 +99,87 @@ Spreadsheet.prototype.getValue = function(formula) {
  * obj.resetCell(cell)
  * var param_3 = obj.getValue(formula)
  */
+
+
+
+
+// Cleaner way - 
+
+/**
+ * @param {number} rows
+ */
+var Spreadsheet = function(rows) {
+     this.sheet = new Array(26).fill().map(()=>new Array(rows).fill(0));
+};
+
+/** 
+ * @param {string} cell 
+ * @param {number} value
+ * @return {void}
+ */
+Spreadsheet.prototype.parseIndex = function(cell){
+    let row = cell.slice(0,1);
+    let col = cell.slice(1);
+    
+    let rowIndex = row.charCodeAt(0) - 'A'.charCodeAt(0);
+    let colIndex = parseInt(col, 10) - 1;
+    
+    return [rowIndex,colIndex]
+}
+
+Spreadsheet.prototype.setCell = function(cell, value) {
+
+    let [rowIndex,colIndex] = this.parseIndex(cell);
+    
+    this.sheet[rowIndex][colIndex] = value;
+};
+
+/** 
+ * @param {string} cell
+ * @return {void}
+ */
+Spreadsheet.prototype.resetCell = function(cell) {
+    let [rowIndex,colIndex] = this.parseIndex(cell);
+    
+    this.sheet[rowIndex][colIndex] = 0;
+};
+
+/** 
+ * @param {string} formula
+ * @return {number}
+ */
+Spreadsheet.prototype.getValue = function(formula) {
+    
+    function isNumber(str){
+        return !Number.isNaN(Number(str));
+    }
+   
+    let expression = formula.slice(1);
+    let operands = expression.split('+');
+    
+    let sum = 0;
+    
+    if(!isNumber(operands[0])){
+        let [rowIndex0,colIndex0] = this.parseIndex(operands[0]);
+        sum += Number(this.sheet[rowIndex0][colIndex0]);
+    }else{
+        sum += Number(operands[0]);
+    }
+    
+    if(!isNumber(operands[1])){
+        let [rowIndex1,colIndex1] = this.parseIndex(operands[1]);
+        sum += Number(this.sheet[rowIndex1][colIndex1]);
+    }else{
+        sum += Number(operands[1]);
+    }
+    
+    return sum;
+};
+
+/** 
+ * Your Spreadsheet object will be instantiated and called as such:
+ * var obj = new Spreadsheet(rows)
+ * obj.setCell(cell,value)
+ * obj.resetCell(cell)
+ * var param_3 = obj.getValue(formula)
+ */
