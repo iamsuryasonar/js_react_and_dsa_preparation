@@ -1,0 +1,16 @@
+#main {
+    margin: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textarea {
+    width: 100%;
+}
+
+.button {
+    align-self: flex-start;
+    padding: 8px 16px;
+}
