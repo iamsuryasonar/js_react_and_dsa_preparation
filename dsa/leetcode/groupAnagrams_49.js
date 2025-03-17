@@ -20,19 +20,36 @@ Input: strs = ["a"]
 Output: [["a"]]
 */
 
-var groupAnagrams = function(strs) {
+// var groupAnagrams = function(strs) {
 
-    let obj = {};
+//     let obj = {};
 
-    strs.forEach((str)=>{
-        let sortedStr = str.split('').sort().join('');
+//     strs.forEach((str)=>{
+//         let sortedStr = str.split('').sort().join('');
         
-        if(obj.hasOwnProperty(sortedStr)){
-            obj[sortedStr].push(str);
-        }else{
-            obj[sortedStr]= [str];
-        }
-    })
+//         if(obj.hasOwnProperty(sortedStr)){
+//             obj[sortedStr].push(str);
+//         }else{
+//             obj[sortedStr]= [str];
+//         }
+//     })
 
-    return Object.values(obj);
+//     return Object.values(obj);
+// };
+
+
+var groupAnagrams = function(strs) {
+    let map = new Map();
+
+    for(let i = 0;i<strs.length;i++){
+        let charArr = new Array(26).fill(0);
+        for(let j = 0;j<strs[i].length;j++){
+            let index = strs[i].charCodeAt(j)-'a'.charCodeAt(0);
+            charArr[index] = charArr[index] + 1;
+        }
+        let key = charArr.join('_'); // use '_' as delimiter (important test case)
+        map.set(key,(map.has(key)?[...map.get(key),strs[i]]:[strs[i]]));
+    }
+
+    return Array.from(map.values());
 };
