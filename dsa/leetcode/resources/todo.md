@@ -1,0 +1,16 @@
+https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
+https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/
+https://leetcode.com/problems/longest-valid-parentheses/
+https://leetcode.com/problems/valid-palindrome/
+https://leetcode.com/problems/valid-palindrome-ii/
+https://leetcode.com/problems/lru-cache/
+https://leetcode.com/problems/string-compression/
+https://leetcode.com/problems/shuffle-an-array/
+https://leetcode.com/problems/rotting-oranges/
+https://leetcode.com/problems/longest-common-prefix/
+https://leetcode.com/problems/roman-to-integer/
+https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
+https://leetcode.com/problems/number-of-good-pairs/
+https://leetcode.com/problems/jewels-and-stones/
+https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/
+https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/submissions/
