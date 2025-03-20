@@ -22,21 +22,7 @@ var twoSum = function (nums, target) {
     
         return [];
     */
-    /*
-        nums.sort((a, b) => a - b);
-    
-        let i = 0;
-        let j = nums.length - 1;
-    
-        while (i < j) {
-            if (nums[i] + nums[j] < target) i++;
-            if (nums[i] + nums[j] > target) j--;
-            if (nums[i] + nums[j] === target) {
-                return [i, j];
-            }
-        }
-        return []; 
-    */
+ 
     
     /*
         for(let i=0;i<nums.length;i++){
