@@ -65,3 +65,70 @@ var findAnagrams = function(s, p) {
 
     return res;
 };
+
+
+
+/**
+ * @param {string} s
+ * @param {string} p
+ * @return {number[]}
+ */
+
+// Another solution
+/**
+ * @param {string} s
+ * @param {string} p
+ * @return {number[]}
+ */
+var findAnagrams = function (s, p) {
+    let strMap = new Map();
+    let pMap = new Map();
+    let i = 0;
+    let j = 0;
+    let result = [];
+    let totalFreq = 0;
+
+    for (let i = 0; i < p.length; i++) {
+        pMap.set(p[i], (pMap.get(p[i]) || 0) + 1);
+    }
+
+    while (j < s.length) {  
+        if (pMap.has(s[j])) {
+            strMap.set(s[j], (strMap.get(s[j]) || 0) + 1);
+            totalFreq++;
+        } else {
+            j++;
+            i = j;
+            totalFreq = 0;
+            strMap.clear();
+            continue;
+        }
+
+        if ((j - i + 1) === p.length && totalFreq === p.length) {
+            if (isMapEqual(pMap, strMap)) {
+                result.push(i);
+            }
+            if(pMap.has(s[i])) totalFreq--;
+            strMap.set(s[i], (strMap.get(s[i]) || 0) - 1);
+            if (strMap.get(s[i]) === 0) strMap.delete(s[i]);
+            i++;
+
+        }
+        j++;
+    }
+
+    function isMapEqual(pMap, strMap) {
+        if (strMap.size !== strMap.size) return false;
+
+        let pArray = Array.from(pMap.keys());
+
+        for (let i = 0; i < pArray.length; i++) {
+            if (pMap.get(pArray[i]) !== strMap.get(pArray[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    return result;
+};
