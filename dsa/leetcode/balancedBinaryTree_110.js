@@ -39,23 +39,34 @@
 //     }
 // };
 
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
 var isBalanced = function(root) {
-    let flag = true;
+    let isHeightBalanced = true;
 
-    function helper(root){
+    function findHeight(root){
         if(!root) return 0;
 
-        let left = 1 + helper(root.left);
-        let right = 1 + helper(root.right);
+        let leftHeight = findHeight(root.left);
+        let rightHeight = findHeight(root.right);
 
-        if(Math.abs(left-right)>1){
-            flag = false;
-        }
+        if(Math.abs(rightHeight - leftHeight) > 1) isHeightBalanced = false;
 
-        return Math.max(left,right);
+        return 1 + Math.max(leftHeight, rightHeight);
     }
 
-    helper(root);
+    findHeight(root);
 
-    return flag;
+    return isHeightBalanced;
+    
 };
