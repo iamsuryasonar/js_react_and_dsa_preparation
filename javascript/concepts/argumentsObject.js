@@ -1,4 +1,4 @@
-/* arguments object is a special local variable available within all functions(accept arrow functions, for it we can use rest parameter)
+/* arguments object is a special local variable available within all functions(except arrow functions, for it we can use rest parameter)
 allows us to access all arguments passed to the function, even if not defined as named parameters */
 
 function example() {
