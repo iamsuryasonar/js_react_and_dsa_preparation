@@ -1,0 +1,48 @@
+.wrapper {
+    padding: 20px 10px;
+    max-width: 400px;
+    place-self: center;
+}
+
+.form {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+}
+
+.button {
+    padding: 6px 18px;
+    background: #ae79f3;
+    border: none;
+    box-shadow: 4px 4px 8px rgb(185, 185, 185);
+}
+
+.delete_button {
+    width: 30px;
+    height: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    background: #d84a4a;
+    border: none;
+    box-shadow: 4px 4px 8px rgb(185, 185, 185);
+    cursor: pointer;
+}
+
+a {
+    list-style: none;
+    background: #e7e7e7;
+    margin: 4px 0;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
