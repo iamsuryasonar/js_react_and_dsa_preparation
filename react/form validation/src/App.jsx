@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import './App.css';
 
 function App() {
@@ -12,6 +12,14 @@ function App() {
   });
 
   const [formErrors, setFormErrors] = useState({});
+
+  const inputRefs = {
+    name: useRef(null),
+    password: useRef(null),
+    age: useRef(null),
+    gender: useRef(null),
+    hobbies: useRef(null),
+  };
 
   function handleInput(e) {
     const { name, value } = e.target;
@@ -81,6 +89,20 @@ function App() {
     return true;
   }
 
+  function focusFirstErrorField() {
+    const fieldOrder = ['name', 'password', 'age', 'gender', 'hobbies'];
+
+    for (let field of fieldOrder) {
+      if (formErrors[field]) {
+        const ref = inputRefs[field]?.current;
+        if (ref) {
+          ref.focus();
+          break;
+        }
+      }
+    }
+  }
+
   function submitForm(e) {
     e.preventDefault();
 
@@ -90,34 +112,35 @@ function App() {
       console.log('form submitted')
     } else {
       console.log('validation error');
+      focusFirstErrorField();
     }
   }
 
   return <form onSubmit={submitForm}>
     <div>
       <label htmlFor='name'>name:</label>
-      <input id='name' type='text' name='name' value={formInputs.name} placeholder='name' onChange={handleInput}></input>
+      <input ref={inputRefs.name} id='name' type='text' name='name' value={formInputs.name} placeholder='name' onChange={handleInput}></input>
     </div>
     {
       formErrors.name && <p>{formErrors.name}</p>
     }
     <div>
       <label htmlFor='password'>password:</label>
-      <input id='password' type='password' name='password' value={formInputs.password} placeholder='password' onChange={handleInput}></input>
+      <input ref={inputRefs.password} id='password' type='password' name='password' value={formInputs.password} placeholder='password' onChange={handleInput}></input>
     </div>
     {
       formErrors.password && <p>{formErrors.password}</p>
     }
     <div>
       <label htmlFor='age'>age:</label>
-      <input id="age" type='number' name='age' value={formInputs.age} placeholder='age' onChange={handleInput}></input>
+      <input ref={inputRefs.age} id="age" type='number' name='age' value={formInputs.age} placeholder='age' onChange={handleInput}></input>
     </div>
     {
       formErrors.age && <p>{formErrors.age}</p>
     }
     <div>
       <label htmlFor="gender">Gender</label>
-      <select name="gender" id="gender" value={formInputs.gender} onChange={handleInput}>
+      <select ref={inputRefs.gender} name="gender" id="gender" value={formInputs.gender} onChange={handleInput}>
         <option value="">Select gender</option>
         <option value="male">male</option>
         <option value="female">female</option>
@@ -131,7 +154,7 @@ function App() {
       <label>Hobbies:</label>
       <div>
         <label htmlFor="reading">Reading:</label>
-        <input type="checkbox" id="reading" name='reading' checked={formInputs.hobbies.includes('reading')} onChange={handleHobbies} />
+        <input ref={inputRefs.hobbies} type="checkbox" id="reading" name='reading' checked={formInputs.hobbies.includes('reading')} onChange={handleHobbies} />
       </div>
       <div>
         <label htmlFor="dancing">Dancing:</label>
